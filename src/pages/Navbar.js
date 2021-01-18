@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 class Navbar extends Component {
   render() {
     return (
-      <div class="navbar">
+      <div className="navbar">
         <a href="#">Home</a>
         <a href="#">About</a>
-        <a href="#" class="right">Contact</a>
+        <a href="#" className="right">Contact</a>
       </div>
     );
   }
