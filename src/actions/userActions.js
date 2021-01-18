@@ -1,5 +1,5 @@
 import {
-  GET_USER_LIST_STARTED, GET_USER_LIST_SUCCESS, GET_USER_LIST_FAILURE
+  GET_USER_LIST_STARTED, GET_USER_LIST_SUCCESS, GET_USER_LIST_FAILURE, RESET_STORE
 } from "./actionTypes";
 
 // to get the list of users - started
@@ -26,5 +26,12 @@ export const getUserListFailure = error => {
     payload: {
       error
     }
+  }
+}
+
+// to reset the state of redux store
+export const resetStore = () => {
+  return {
+    type: RESET_STORE
   }
 }
